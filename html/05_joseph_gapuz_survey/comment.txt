@@ -1,0 +1,2 @@
+Time to complete: about 50 minutes.
+Challenges/ areas of confusion: I had trouble matching labels with inputs, but I fixed it by carefully checking each one and using the HTML validator. The validator helped me catch things I had overlooked, like missing or incorrect for attributes.

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit_form" method="POST">
+        <!-- Full Name -->
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name">
+
+        <!-- Email -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email">
+
+        <!-- Satisfaction -->
+        <label>How satisfied are you with our service?</label>
+        <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
+        <label for="very-satisfied">Very Satisfied</label>
+        <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+        <label for="satisfied">Satisfied</label>
+        <input type="radio" id="neutral" name="satisfaction" value="neutral">
+        <label for="neutral">Neutral</label>
+        <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+        <label for="dissatisfied">Dissatisfied</label>
+        <input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied">
+        <label for="very-dissatisfied">Very Dissatisfied</label>
+
+        <!--id	    Uniquely identifies an input for labels
+            name	Groups related inputs so only one can be selected
+            value	Defines what gets submitted when selected -->
+
+        <!-- Features -->
+        <label>What features do you value most?</label>
+        <input type="checkbox" id="ease-of-use" name="feature-preference" value="ease-of-use">
+        <label for="ease-of-use">Ease of Use</label>
+        <input type="checkbox" id="design" name="feature-preference" value="design">
+        <label for="design">Design</label>
+        <input type="checkbox" id="performance-and-speed" name="feature-preference" value="performance-and-speed"> 
+        <label for="performance-and-speed">Performance & Speed</label>
+        <input type="checkbox" id="customer-support" name="feature-preference" value="customer-support"> 
+        <label for="customer-support">Customer Support</label>
+
+        <!-- User Role -->
+        <label for="user-role">What best describes you?</label>
+        <select id="user-role" name="user-role">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="hobbyist">Hobbyist</option>
+            <option value="other">Other</option>
+        </select>
+
+        <!-- Additional Comments -->
+        <label for="feedback">Additional Feedback:</label>
+        <textarea id="feedback" name="feedback"></textarea>
+
+        <!-- Form Submission -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
