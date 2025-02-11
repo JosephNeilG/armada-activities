@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio highlighting Joseph Neil Gapuz's work, skills, and contact information.">
+    <title>Joseph's Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="about">About Me</h2>
+            <p>Hi! I'm a 4th-year IT student at DMMMSU Mid-La Union Campus, passionate about web development and multimedia arts. I love finding creative ways to solve real-world problems through technology. When I’m not coding, you’ll probably find me running or playing tennis—and one day, I hope to cross the finish line of a marathon!</p>
+            <img src="joseph-photo.jpg" alt="image of joseph neil gapuz">
+        </section>
+
+        <section>
+            <h2 id="projects">Projects</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Etch-A-Sketch</td>
+                        <td>A Retro-Themed Etch-A-Sketch game using HTML, CSS, JavaScript, and NES.css.</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>Library Management System</td>
+                        <td>A web interface using HTML, CSS, Bootstrap 5.3, and JavaScript to manage books/ authors.</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>Rock Paper Scissors Game</td>
+                        <td>A simple game against the computer, built with HTML, CSS, and JavaScript.</td>
+                        <td>2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <form action="/submit_form" method="POST">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full_name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+
+                <p>How did you hear about this portfolio?</p>
+                <input type="radio" id="friend" name="found_via" value="friend">
+                <label for="friend">Friend</label>
+                <input type="radio" id="social-media" name="found_via" value="social-media">
+                <label for="social-media">Social Media</label>
+                <input type="radio" id="search-engine" name="found_via" value="search-engine">
+                <label for="search-engine">Search Engine</label>
+                <input type="radio" id="other" name="found_via" value="other">
+                <label for="other">Other</label>
+
+                <p>Skills/ Interests</p>
+                <input type="checkbox" id="web-dev" name="skills-interest" value="web-development">
+                <label for="web-dev">Web Development</label>
+                <input type="checkbox" id="design" name="skills-interest" value="design">
+                <label for="design">Design</label>
+                <input type="checkbox" id="photography" name="skills-interest" value="photography"> 
+                <label for="photography">Photography</label>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Joseph Neil Gapuz 2025</p>
+    </footer>
+</body>
+</html>

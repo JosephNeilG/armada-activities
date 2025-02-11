@@ -1,0 +1,2 @@
+Time to complete: about 1 hour.
+Challenges/ areas of confusion: Overlooked some id/for attributes in the form part, found it using the validator and made changes.
