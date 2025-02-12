@@ -33,9 +33,10 @@ h1, h2 {
     align-items: center;
 }
 
-/* space in between links */
-a {
-    margin-right: 15px;
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* remove default styling on links and set color */
