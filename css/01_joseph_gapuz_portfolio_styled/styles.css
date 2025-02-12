@@ -1,0 +1,226 @@
+/* global styles */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #131828;
+    color: #8e97a8;
+    font-family: 'Inter-Regular', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* set font size to some */
+td, a, p, label {
+    font-size: 14px;
+}
+
+/* margin bottom and color for header and subheaders */
+h1, h2 {
+    margin: 0px 0px 10px 0px;
+    color: #b9c1d1;
+}
+
+/* 1st container: header */
+.header-container {
+    background-color: #1B253A;
+    padding: 30px;
+    margin: 30px auto 0 auto;
+    width: 70%;
+    max-width: 1200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* space in between links */
+a {
+    margin-right: 15px;
+}
+
+/* remove default styling on links and set color */
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #49a18b;
+}
+
+/* change opacity on links hover */
+a:hover {
+    opacity: 0.8;
+}
+
+/* 2nd container: about */
+.about-container {
+    background-color: #1B253A;
+    padding: 30px;
+    margin: 30px auto; /* auto centers container horizontally */
+    width: 70%; /* % of parent container, shrinks/expands depending on screensize */
+    max-width: 1200px; /* prevents getting wider on large screen */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* subheader and description */
+.about-details {
+    margin-left: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* image sizing */
+.about-container img {
+    width: 25%; /* adjusts size based on the container */
+    max-width: 260px;
+    height: auto; /* keeps the original aspect ratio */
+    max-height: 260px;
+    border-radius: 10px;
+}
+
+/* 3rd container: projects */
+.projects-container {
+    background-color: #1B253A;
+    padding: 30px;
+    margin: 30px auto;
+    width: 70%;
+    max-width: 1200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* table format */
+table {
+    border-collapse: collapse; /* share cell borders */
+    margin-top: 10px;
+}
+
+/* header cell font color and bg color */
+th {
+    color: #b9c1d1;
+    background-color: #131828;
+}
+
+/* table data and table header cell */
+td, th {
+text-align: left;
+padding: 15px;
+}
+
+/* make even rows darker bg */
+tr:nth-child(even) {
+    background-color:#131828;
+}
+
+/* 4 corners of the table rounded */
+th:first-of-type {
+border-top-left-radius: 10px;
+}
+
+th:last-of-type {
+border-top-right-radius: 10px;
+}
+
+tr:last-of-type td:first-of-type {
+border-bottom-left-radius: 10px;
+}
+
+tr:last-of-type td:last-of-type {
+border-bottom-right-radius: 10px;
+}
+
+/* 4th container: form */
+.contact-container {
+    background-color: #1B253A;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px auto;
+    width: 70%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* title */
+.contact-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* form group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17px;
+}
+
+/* labels */
+.all-label {
+    margin-bottom: 5px;
+    color: #b9c1d1;
+}
+
+/* inputs & yextarea */
+.input-field {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #49A18B;
+    background-color: #233143;
+    color: #b9c1d1;
+}
+
+.input-field:hover {
+    opacity: 0.8;
+}
+
+/* radio and checkbox group */
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* submit button */
+.submit-btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #b9c1d1;
+    background-color: #49A18B;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    opacity: 0.8;
+}
+
+/* 5th container: footer */
+footer {
+    background-color: #1B253A;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-logo {
+    color: #b9c1d1;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0px 0px 5px 0px;
+}
+
+.icons a {
+    font-size: 25px;
+}
+
+.portfolio {
+    color: #49A18B;
+    font-style: italic;
+}
+
+.copyright {
+    font-size: 12px;
+    margin: 5px 0px 0px 0px;
+}
