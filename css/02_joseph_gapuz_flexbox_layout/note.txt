@@ -1,0 +1,5 @@
+my approach to this challenge is to review the elements, identified that the body must be in column and the main section in a row.
+
+after fixing all the positions, i struggled centering the body. when using align-items: center, the header and footer disappears. i fixed it by setting height: 100vh to take up the full viewport height, and then the justify-content: center to align all elements properly.
+
+it took me almost an hour to complete.
