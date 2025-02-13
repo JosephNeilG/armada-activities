@@ -1,0 +1,5 @@
+i started by checking the overall positioning, the structure was already correct, so i focused on styling. i added a background to the footer, changed the font color for h1, box, and p, and adjusted the left panel’s background, position, and size using flexbox. then, i worked on the right panel's contents. also, on adding color to elements and text, i used the colorpick eyedropper chrome extension to match the colors given on reference image.
+
+the difficulty i faced was matching the exact element sizes from the reference image. i later realized that sizes vary based on screen size, so i adjusted the padding, width etc as close as possible.
+
+the assignment took me about an hour to complete.
