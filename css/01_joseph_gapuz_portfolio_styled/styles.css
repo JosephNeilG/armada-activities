@@ -91,6 +91,36 @@ a:hover {
     margin-bottom: 0;
 }
 
+.contact-button-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.hire-button, .linkedin-button {
+    padding: 7px 25px;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 14px;
+    color: #d0d1d4;
+    cursor: pointer;
+    
+}
+
+.hire-button {
+    border: 0;
+    background-color: #49a18b;
+}
+
+.hire-button:hover {
+    color: #d0d1d4;
+}
+
+.linkedin-button {
+    border: 1px solid #d0d1d4;
+    background-color: transparent; 
+}
+
 /* 3rd container: projects */
 .projects-container {
     background-color: #1B253A;
@@ -200,7 +230,7 @@ border-bottom-right-radius: 10px;
     border: none;
     padding: 10px;
     border-radius: 5px;
-    color: #b9c1d1;
+    color: #caced6;
     background-color: #49A18B;
     font-size: 16px;
     cursor: pointer;
