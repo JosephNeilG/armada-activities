@@ -29,13 +29,13 @@ body {
     border-radius: 7px;
 }
 
-.input-container {
+form {
     display: flex;
     align-items: center;
     max-width: 100%;
 }
 
-.input-container input {
+form input {
     flex: 1;
     min-width: 0;
     border: 1px solid #DDDDDD;
@@ -44,7 +44,7 @@ body {
     border-bottom-left-radius: 7px;
 }
 
-.input-container button {
+form button {
     background-color: #2378D3;
     color: #FFFFFF;
     border: 1px solid #2378D3;
@@ -54,7 +54,7 @@ body {
     cursor: pointer;
 }
 
-.input-container input:hover, .input-container button:hover, .task-item:hover {
+form input:hover, form button:hover, .task-item:hover {
     opacity: 0.8;
 }
 
@@ -63,7 +63,6 @@ body {
     flex-direction: column;
     gap: 10px;
     list-style: none;
-    padding: 0;
 }
 
 .task-item {
