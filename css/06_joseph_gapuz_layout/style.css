@@ -29,27 +29,27 @@ nav {
     padding: 8px;
 }
 
-.nav-items:hover, .bootstrap-logo:hover, .search-button:hover {
+a:hover, .bootstrap-logo:hover, .search-button:hover, .npm-copy:hover, .read-docs-button:hover {
     opacity: 0.8;
 }
 
 .search-button {
     display: flex;
     align-items: center;
-    background-color: #6428DC; /* Background color */
-    border: 1px solid #FFFFFF66; /* Border color */
-    color: #FFFFFF66; /* Text color */
+    background-color: #6428DC;
+    border: 1px solid #FFFFFF66;
+    color: #FFFFFF66;
     padding: 0 8px;
     height: 38px;
     width: 260px;
     border-radius: 6px;
-    cursor: pointer;
     font-size: 16px;
     margin-left: 172px;
+    cursor: pointer;
 }
 
 .placeholder {
-    color: #FFFFFF66; /* Placeholder text color */
+    color: #FFFFFF66;
     padding: 0 12px 0 6px;
 }
 
@@ -63,14 +63,21 @@ nav {
 .intro-logo {
     width: 200px;
     height: 165px;
-    aspect-ratio: auto 200 / 165;
+    aspect-ratio: 200 / 165;
 }
 
 .intro-title {
     font-size: 64px;
     color: #FFFFFF;
     font-weight: 600;
+}
+
+.intro-title, .code-icon, .started-title, .started-description {
     margin-bottom: 16px;
+}
+
+.intro-description, .intro-install {
+    margin-bottom: 24px;
 }
 
 .new-line {
@@ -82,14 +89,12 @@ nav {
     color: #DEE2E6C0;
     font-weight: 400;
     line-height: 36px;
-    margin-bottom: 24px;
 }
 
 .intro-install {
     display: flex;
     justify-content: center;
     gap: 16px;
-    margin-bottom: 24px; 
 }
 
 .npm-copy, .read-docs-button {
@@ -135,14 +140,12 @@ strong {
     color: #702CF9;
     padding: 16px;
     border-radius: 16px;
-    margin-bottom: 16px;
 }
 
 .started-title {
     font-size: 48px;
     color: #FFFFFF;
     font-weight: 600;
-    margin-bottom: 16px;
 }
 
 .started-description {
@@ -150,7 +153,6 @@ strong {
     color: #DEE2E6;
     font-weight: 400;
     line-height: 30px;
-    margin-bottom: 16px;
 }
 
 .install-link {
