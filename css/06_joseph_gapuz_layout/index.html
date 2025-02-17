@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+    <title>Bootstrap · The most popular HTML, CSS, and JS library in the world.</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="bootstrap-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 118 94" role="img">
+                    <title>Bootstrap</title>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                        fill="currentColor"></path>
+                </svg>
+            </a>
+            <ul class="nav-links">
+                <li><a class="nav-items" href="#">Docs</a></li>
+                <li><a class="nav-items" href="#">Examples</a></li>
+                <li><a class="nav-items" href="#">Icons</a></li>
+                <li><a class="nav-items" href="#">Themes</a></li>
+                <li><a class="nav-items" href="#">Blog</a></li>
+            </ul>
+            <button type="button" class="search-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" class="search-icon">
+                    <path
+                        d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                        stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="placeholder">Search</span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="intro-section">
+            <img src="asset/bootstrap-logo-main.png" class="intro-logo" alt="logo of bootstrap">
+            <h1 class="intro-title">Build fast, responsive sites<span class="new-line">with Bootstrap</span></h1>
+            <p class="intro-description">
+                Powerful, extensible, and feature-packed frontend toolkit. Build and customize<span
+                    class="new-line">with Sass, utilize prebuilt grid system and components, and bring projects to
+                    life</span>with powerful JavaScript plugins.
+            </p>
+            <div class="intro-install">
+                <div class="npm-copy">
+                    <span class="darker">$</span> npm i bootstrap@5.3.3
+                </div>
+                <a class="read-docs-button" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Read
+                    the docs</a>
+            </div>
+            <p class="version-details">
+                Currently <strong>v5.3.3</strong>
+                <span class="bullet">·</span>
+                <a href="#" class="version-link">Download</a>
+                <span class="bullet">·</span>
+                <a href="#" class="version-link">All releases</a>
+            </p>
+        </section>
+
+        <section class="get-started-section">
+            <svg class="code-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                viewBox="0 0 16 16">
+                <path
+                    d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z" />
+            </svg>
+            <h1 class="started-title">Get started any way you want</h1>
+            <p class="started-description">Jump right into building with Bootstrap—use the CDN, install it via package
+                <span class="new-line">manager, or download the source code.</span></p>
+            <p class="d-flex justify-content-md-start justify-content-md-center lead fw-normal">
+                <a href="#" class="install-link">Read installation docs
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg>
+                </a>
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
