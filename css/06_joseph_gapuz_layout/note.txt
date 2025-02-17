@@ -1,0 +1,12 @@
+I approached this challenge by inspecting the Bootstrap homepage, analyzing how the containers were structured and how elements were styled. I paid close attention to details such as paddings, margins, gaps, text colors, font sizes, and background colors to make my clone as accurate as possible. For the icons, I copied how it was implemented the bootstrap page and removed unnecessary Bootstrap-specific classes, and manually styled it.
+
+One challenge I encountered was centering the search button on the navbar responsively. after several attempts, I just opted applying a left margin to position it to center as close as possible. Another challenge I faced was ensuring that every element had the exact same CSS values as the reference by carefully inspecting each one. This increased the time to complete the task, and finished it around three hours.
+
+
+
+
+
+
+
+
+
