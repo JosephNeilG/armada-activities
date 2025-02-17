@@ -18,7 +18,7 @@ header {
     align-items: center;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(asset/hero-bg.jpg) no-repeat center center fixed;
+        url(assets/hero-bg.jpg) no-repeat center center fixed;
     background-size: cover;
     background-position: center center;
 }
