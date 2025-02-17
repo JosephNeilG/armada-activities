@@ -17,7 +17,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)),
         url(assets/hero-bg.jpg) no-repeat center center fixed;
     background-size: cover;
     background-position: center center;
