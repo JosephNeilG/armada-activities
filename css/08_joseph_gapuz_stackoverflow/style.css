@@ -1,23 +1,21 @@
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+    font-family: "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
 }
 
 header {
     border-top: 2.4px solid #E7700D;
     border-bottom: 0.8px solid #D6D9DC;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    background-color: white; /* Adjust based on design */
-    z-index: 1000; /* Ensures it stays above other content */
+    background-color: #ffffff;
+    z-index: 1000;
 }
 
 .nav-container,
@@ -86,6 +84,13 @@ form .search-input {
     gap: 8px;
 }
 
+.btn-primary {
+    padding: 6px 13px;
+    border-radius: 6px;
+    background-color: #1B75D0;
+    color: #ffffff;
+}
+
 .padding-border {
     padding: 6px 13px;
     border-radius: 6px;
@@ -96,11 +101,6 @@ form .search-input {
     color: #1B75D0;
 }
 
-.sign-up,
-.explore-button {
-    background-color: #1B75D0;
-    color: #ffffff;
-}
 
 .side-bar {
     padding-top: 24px;
@@ -213,11 +213,6 @@ form .search-input {
     gap: 17px;
 }
 
-.call-to-action .sign-up,
-.explore-button {
-    padding: 10.4px;
-}
-
 .call-to-action .visit-community {
     color:#1B75D0;
 }
@@ -232,8 +227,6 @@ form .search-input {
     bottom: 0;
     right: 32px;
 }
-
-/* services section */
 
 .services-title,
 .work-title {
@@ -267,7 +260,7 @@ form .search-input {
     width: 550px;
 }
 
-.call-to-action .try-link {
+.call-to-action .link-underline {
     text-decoration: underline;
     color:#1B75D0;
 }
@@ -292,8 +285,6 @@ form .search-input {
     color: #ffffff;
 }
 
-/* side by side card */
-
 .ad-api-container {
     display: flex;
     justify-content: space-between;
@@ -314,8 +305,6 @@ form .search-input {
 .ad-buttons {
     margin-top: 21px;
 }
-
-/* work section */
 
 .work-card {
     margin-bottom: 60px;
