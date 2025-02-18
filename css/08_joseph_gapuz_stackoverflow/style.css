@@ -1,0 +1,85 @@
+* {
+    /* outline: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+}
+
+header {
+    border-bottom: 0.8px solid #D6D9DC;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1310px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px;
+    color: #636B74;
+    font-size: 14px;
+}
+
+.left-nav a,
+.left-nav li,
+.nav-container form {
+    padding: 0 8px;
+}
+
+.nav-logo {
+    width: 150px;
+    height: 30px;
+}
+
+.left-nav {
+    list-style-type: none;
+    display: flex;
+}
+.nav-container form {
+    flex-grow: 1;
+    flex-shrink: 10000;
+}
+
+form .search-input {
+    width: 100%;
+    border: none; /* Removes default border */
+    outline: none; /* Removes focus outline */
+    border: 1px solid #ccc; /* Adds a custom border */
+    padding: 8px 13px;
+    border-radius: 6px;
+}
+
+.left-nav button,
+.left-nav a {
+    all: unset;
+    cursor: pointer;
+}
+
+.auth-links a {
+    text-decoration: none;
+}
+
+.auth-links {
+    display: flex;
+    gap: 8px;
+}
+
+.auth-button {
+    padding: 6px 13px;
+    border-radius: 6px;
+}
+
+.log-in {
+    border: 1px solid #2275D0;
+    color: #2275D0;
+}
+
+.sign-up {
+    background-color: #2275D0;
+    color: #ffffff;
+}
