@@ -13,9 +13,7 @@ body {
 
 header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)),
         url(assets/hero-bg.jpg) no-repeat center center fixed;
@@ -64,13 +62,15 @@ select {
 
 select option {
     color: #000000;
+    background-color: #ffffff;
 }
 
 select:hover,
 .sign-in-button:hover,
 .trending-item:hover,
 .email-input:hover,
-.get-started-button:hover {
+.get-started-button:hover,
+.next-button:hover {
     opacity: 0.8;
 }
 
