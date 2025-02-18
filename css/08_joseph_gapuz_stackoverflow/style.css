@@ -1,5 +1,5 @@
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,14 @@ body {
 }
 
 header {
+    border-top: 2.4px solid #E7700D;
     border-bottom: 0.8px solid #D6D9DC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Adjust based on design */
+    z-index: 1000; /* Ensures it stays above other content */
 }
 
 .nav-container,
@@ -19,6 +26,10 @@ header {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
+}
+
+.main-container {
+    padding-top: 64px;
 }
 
 .nav-container {
@@ -93,6 +104,9 @@ form .search-input {
 
 .side-bar {
     padding-top: 24px;
+    height: 310px;
+    position: sticky;
+    top: 64px;
 }
 
 .side-item {
