@@ -51,9 +51,9 @@ header {
 
 form .search-input {
     width: 100%;
-    border: none; /* Removes default border */
-    outline: none; /* Removes focus outline */
-    border: 1px solid #ccc; /* Adds a custom border */
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
     padding: 8px 13px;
     border-radius: 6px;
 }
@@ -75,7 +75,7 @@ form .search-input {
     gap: 8px;
 }
 
-.auth-button {
+.padding-border {
     padding: 6px 13px;
     border-radius: 6px;
 }
@@ -85,7 +85,8 @@ form .search-input {
     color: #1B75D0;
 }
 
-.sign-up {
+.sign-up,
+.explore-button {
     background-color: #1B75D0;
     color: #ffffff;
 }
@@ -134,10 +135,15 @@ form .search-input {
     border-radius: 6px;
     width: 100%;
     height: 325px;
+}
+
+.hero-section,
+.services-card {
+    padding-left: 30px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 40px;
 }
 
 .text-container {
@@ -178,9 +184,12 @@ form .search-input {
     z-index: -1;
 }
 
-.description {
+.description,
+.services-title,
+.work-title {
     width: 590px;
     font-size: 19px;
+    color: #393E44;
 }
 
 .call-to-action {
@@ -190,7 +199,8 @@ form .search-input {
     gap: 17px;
 }
 
-.call-to-action .sign-up {
+.call-to-action .sign-up,
+.explore-button {
     padding: 10.4px;
 }
 
@@ -198,10 +208,109 @@ form .search-input {
     color:#1B75D0;
 }
 
-.hero-image {
+.hero-image,
+.teams-image,
+.ai-image,
+.work-image {
     position: absolute;
     width: 455px;
     height: auto;
     bottom: 0;
     right: 32px;
+}
+
+/* services section */
+
+.services-title,
+.work-title {
+    margin: 25px 0;
+}
+
+.services-card {
+    border: 0.8px solid #D6D9DC;
+    border-radius: 7px;
+    height: 220px;
+}
+
+.services-logo,
+.so-logo {
+    width: 150px;
+    height: auto;
+}
+
+.teams-card,
+.work-card {
+    position: relative;
+}
+
+.teams-image,
+.ai-image,
+.work-image {
+    right: 0;
+}
+
+.teams-card .description {
+    width: 550px;
+}
+
+.call-to-action .try-link {
+    text-decoration: underline;
+    color:#1B75D0;
+}
+
+.ai-card {
+    background-color: #3B4045;
+    border-radius: 7px;
+    position: relative;
+}
+
+.ai-card .description {
+    width: 600px;
+    color: #ffffff;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.ai-button {
+    background-color: #FF810F;
+    color: #ffffff;
+}
+
+/* side by side card */
+
+.ad-api-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.ad-card,
+.api-card {
+    width: 550px;
+    padding: 30px;
+    border: 0.8px solid #D6D9DC;
+    border-radius: 7px;
+}
+
+.ad-api-container .description {
+    width: auto;
+}
+
+.ad-buttons {
+    margin-top: 21px;
+}
+
+/* work section */
+
+.work-card {
+    margin-bottom: 60px;
+}
+
+.work-card .description {
+    width: 500px;
+}
+
+.work-image {
+    width: 570px;
 }
