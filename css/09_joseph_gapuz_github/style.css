@@ -184,6 +184,7 @@ body {
 .popular-img {
     width: 100%;
     border-radius: 7px 7px 0 0;
+    cursor: pointer;
 }
 
 .text-container {
@@ -374,6 +375,7 @@ body {
     color: #4493f8;
 }
 
+.header-nav-link:hover,
 .auth-item:hover {
     opacity: 0.8;
 }
