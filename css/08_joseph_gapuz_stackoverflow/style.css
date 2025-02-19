@@ -179,23 +179,14 @@ form .search-input {
     color: #ffffff;
     padding: 0 25px;
     position: relative;
-    display: inline-block;
     z-index: 1;
 }
 
-.bg-highlight::before {
-    content: "";
+.orange-highlight {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    width: 105%;
-    height: 105%;
-    background-image: url("assets/background-image.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
+    top: 45px;
+    left: 164px;
+    z-index: 0;
 }
 
 .description,
