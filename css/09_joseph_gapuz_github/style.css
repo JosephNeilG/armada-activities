@@ -29,7 +29,7 @@ body {
 .footer-nav-list {
     display: flex;
     list-style: none;
-    gap: 18px; 
+    gap: 18px;
 }
 
 .header-nav-link,
@@ -74,7 +74,7 @@ body {
     width: 100%;
     border: 1px solid #8A95A3;
     background-color: #25292E;
-    padding: 8px 31px; /* Adjust padding to prevent overlap */
+    padding: 8px 31px;
     border-radius: 6px;
     font-size: 14px;
     color: #ffffff;
@@ -84,7 +84,6 @@ body {
     color: #b3b9c2;
 }
 
-/* Left: Search Icon */
 .search-icon {
     position: absolute;
     left: 7px;
@@ -94,7 +93,6 @@ body {
     background-size: contain;
 }
 
-/* Right: Slash Icon */
 .slash-icon {
     position: absolute;
     right: 7px;
@@ -190,7 +188,7 @@ body {
 
 .text-container {
     border-top: 0.914px solid #3d444d;
-    padding: 16px; 
+    padding: 16px;
     word-wrap: break-word;
 }
 
