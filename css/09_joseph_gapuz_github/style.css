@@ -1,0 +1,144 @@
+* {
+    /* outline: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    background-color: #0D1117;
+    color: #FFFFFF;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 30px;
+    background-color: #25292E;
+    font-size: 14px;
+}
+
+.header-start {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header-nav-list {
+    display: flex;
+    list-style: none;
+    gap: 18px; 
+}
+
+.header-nav-link,
+.auth-item,
+.main-nav-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url('assets/icons/nav-item-icon.png') center no-repeat;
+    background-size: contain;
+    margin-left: 3px;
+}
+
+.header-end {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 470px;
+}
+
+.search-container {
+    flex-grow: 1;
+    flex-shrink: 10000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    border: 1px solid #8A95A3;
+    background-color: #25292E;
+    padding: 8px 31px; /* Adjust padding to prevent overlap */
+    border-radius: 6px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.search-input::placeholder {
+    color: #b3b9c2;
+}
+
+/* Left: Search Icon */
+.search-icon {
+    position: absolute;
+    left: 7px;
+    width: 18px;
+    height: 18px;
+    background: url('assets/icons/search-bar-icon.png') no-repeat center;
+    background-size: contain;
+}
+
+/* Right: Slash Icon */
+.slash-icon {
+    position: absolute;
+    right: 7px;
+    width: 20px;
+    height: 20px;
+    background: url('assets/icons/search-bar-slash-icon.png') no-repeat center;
+    background-size: contain;
+}
+
+.auth-list {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-outline-light {
+    color: inherit;
+    padding: 8px 15px;
+    border: 1px solid #E1EAF1;
+    border-radius: 6px;
+}
+
+.btn-no-outline-light {
+    color: inherit;
+    padding: 8px 15px;
+}
+
+.shadow {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+
+.main-nav-container {
+    display: flex;
+    max-width: 1012px;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #9198A1;
+}
+
+.main-nav-item {
+    padding: 16px 0;
+    margin-right: 24px;
+}
+
+.selected-item {
+    font-weight: 600;
+    color: #F0F6FC;
+    border-bottom: 2px solid #1074E7;
+}
+
+.main-nav-item:hover {
+    border-bottom: 2px solid #9198A1;
+    color: #f6f8fa;
+}
