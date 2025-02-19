@@ -25,7 +25,8 @@ body {
     gap: 18px;
 }
 
-.header-nav-list {
+.header-nav-list,
+.footer-nav-list {
     display: flex;
     list-style: none;
     gap: 18px; 
@@ -34,7 +35,12 @@ body {
 .header-nav-link,
 .auth-item,
 .main-nav-item,
-.text-container a {
+.text-container a,
+.dev-title-container .card-subtitle,
+.name,
+.repo-link,
+.dev-footer .link,
+.footer-nav-link {
     text-decoration: none;
     color: inherit;
 }
@@ -119,13 +125,13 @@ body {
     box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
 }
 
-.main-nav-container {
+.main-nav-container,
+.footer {
     display: flex;
     max-width: 1012px;
     justify-content: center;
     margin: 0 auto;
     font-size: 14px;
-    color: #9198A1;
 }
 
 .main-nav-item {
@@ -146,7 +152,7 @@ body {
 
 .content-container {
     max-width: 1280px;
-    margin: 20px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
@@ -156,19 +162,13 @@ body {
     width: 50%;
 }
 
-.popular-devs-container {
-    width: 25%;
-}
-
-.main-container,
-.popular-devs-container {
+.main-container {
     padding: 24px 16px;
 }
 
 .popular-title {
     font-weight: 600;
     font-size: 20px;
-    color: #9198a1;
 }
 
 .card-border {
@@ -177,18 +177,19 @@ body {
 }
 
 .popular-card {
+    border: 0.914px solid #3d444d;
     display: flex;
     flex-direction: column;
     margin: 20px 0;
 }
 
 .popular-img {
-    border: 1px solid #3d444d;
     width: 100%;
     border-radius: 7px 7px 0 0;
 }
 
 .text-container {
+    border-top: 0.914px solid #3d444d;
     padding: 16px; 
     word-wrap: break-word;
 }
@@ -196,7 +197,6 @@ body {
 .card-subtitle {
     font-size: 12px;
     font-weight: 600;
-    color: #9198a1;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
@@ -209,9 +209,8 @@ body {
     background: url('assets/icons/card-logo.png');
 }
 
-.title {
+.text-container .title {
     color: #4493f8;
-    margin-bottom: 8px;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
@@ -221,15 +220,19 @@ body {
     font-size: 14px;
     line-height: 1.5;
     padding-right: 3px;
-    margin-bottom: 8px;
-    color: #9198a1;
+    margin: 8px 0;
 }
 
 .collection-recommendation-card {
     padding: 16px;
 }
 
-.text-container .link {
+.collection-recommendation-card .text-container {
+    border: none;
+}
+
+.text-container .link,
+.dev-footer .link {
     color: #4493f8;
     font-size: 14px;
 }
@@ -251,4 +254,128 @@ body {
     justify-content: center;
     align-items: center;
     margin: 7px 5px 10px 0;
+}
+
+.trending-card {
+    width: 25%;
+}
+
+.dev-title-container,
+.dev-footer {
+    padding: 20px 16px;
+    background-color: #151b23;
+}
+
+.dev-card {
+    border: 0.914px solid #3d444d;
+    border-radius: 7px;
+}
+
+.dev-title-container .card-subtitle {
+    color: inherit;
+    font-size: 14px;
+    margin: 0;
+}
+
+.dev-icon {
+    width: 16px;
+    height: 16px;
+    background: url('assets/icons/dev-icon.png') center no-repeat;
+}
+
+.dev-item,
+.dev-footer {
+    padding: 16px;
+    border-top: 0.914px solid #3d444d;
+}
+
+.dev-content {
+    display: flex;
+}
+
+.avatar-position {
+    padding: 8px;
+    width: 25%;
+}
+
+.avatar-user {
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.dev-details {
+    padding: 0 8px;
+    width: 75%;
+}
+
+.name-username {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.username {
+    font-weight: 400;
+}
+
+.repo-link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.repo-icon {
+    width: 16px;
+    height: 16px;
+    background: url('assets/icons/repo-icon.png') center no-repeat;
+}
+
+.dev-footer {
+    background-color: inherit;
+}
+
+.repo-link,
+.dev-footer .link {
+    font-size: 12px;
+}
+
+.footer {
+    padding: 64px 16px 40px 16px;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+}
+
+.text-container .title:hover,
+.text-container .link:hover,
+.name:hover,
+.dev-footer .link:hover,
+.footer-nav-list .footer-nav-link:hover {
+    color: #4493f8;
+    text-decoration: underline;
+}
+
+.dev-title-container .card-subtitle:hover,
+.repo-link:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.muted-text,
+.repo-link:hover {
+    color: #9198a1;
+}
+
+.primary-text {
+    color: #4493f8;
+}
+
+.auth-item:hover {
+    opacity: 0.8;
 }

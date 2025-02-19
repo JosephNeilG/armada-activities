@@ -15,22 +15,22 @@
             </a>
             <nav class="header-nav-container">
                 <ul class="header-nav-list">
-                    <li class="header-nav-item">
+                    <li>
                         <a href="#" class="header-nav-link">Product <span class="nav-icon"></span></a>
                     </li>
-                    <li class="header-nav-item">
+                    <li>
                         <a href="#" class="header-nav-link">Solutions <span class="nav-icon"></span></a>
                     </li>
-                    <li class="header-nav-item">
+                    <li>
                         <a href="#" class="header-nav-link">Resources <span class="nav-icon"></span></a>
                     </li>
-                    <li class="header-nav-item">
+                    <li>
                         <a href="#" class="header-nav-link">Open Source <span class="nav-icon"></span></a>
                     </li>
-                    <li class="header-nav-item">
+                    <li>
                         <a href="#" class="header-nav-link">Enterprise <span class="nav-icon"></span></a>
                     </li>
-                    <li class="header-nav-item">
+                    <li>
                         <a href="#" class="header-nav-link">Pricing</a>
                     </li>
                 </ul>                
@@ -50,7 +50,7 @@
     </header>
     <main>
         <div class="sticky shadow">
-            <nav class="main-nav-container">
+            <nav class="main-nav-container muted-text">
                 <a href="#" class="main-nav-item selected-item">Explore</a>
                 <a href="#" class="main-nav-item">Topics</a>
                 <a href="#" class="main-nav-item">Trending</a>
@@ -61,17 +61,17 @@
         </div>
         <section class="content-container">
             <div class="main-container">
-                <h1 class="popular-title">Here's what's popular on Github today...</h1>
+                <h1 class="popular-title muted-text">Here's what's popular on Github today...</h1>
                 <article class="popular-card card-border">
                     <img class="popular-img" src="assets/popular-img.png" alt="Game Off Photo">
                     <div class="text-container">
-                        <h2 class="card-subtitle"><span class="card-logo"></span> Game Bytes</h2>
-                        <h1 class="title">Top-rated games from Game Off 2024</h1>
-                        <p class="description">Another year, another incredible GitHub Game Off and this one was secrets-ational! With over 500 submissions, participants turned the theme of "secrets" into an extraordinary showcase of creativity, humor, and mind-bogging mechanics. Play the top-rated games now!</p>
+                        <h2 class="card-subtitle muted-text"><span class="card-logo"></span> Game Bytes</h2>
+                        <a href="#" class="title">Top-rated games from Game Off 2024</a>
+                        <p class="description muted-text">Another year, another incredible GitHub Game Off and this one was secrets-ational! With over 500 submissions, participants turned the theme of "secrets" into an extraordinary showcase of creativity, humor, and mind-bogging mechanics. Play the top-rated games now!</p>
                     </div>
                 </article>
                 <article class="collection-recommendation-card card-border">
-                    <h2 class="card-subtitle"><span class="card-logo"></span> Collection recommended by GitHub</h2>
+                    <h2 class="card-subtitle muted-text"><span class="card-logo"></span> Collection recommended by GitHub</h2>
                     <div class="img-text-container">
                         <div class="img-placeholder">
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#9198a1" viewBox="0 0 16 16">
@@ -79,9 +79,9 @@
                             </svg>
                         </div>
                         <div class="text-container">
-                            <h1 class="title">Game Engines</h1>
-                            <p class="description">Frameworks for building games across multiple platforms.</p>
-                            <a href="#" class="link">
+                            <a href="#" class="title">Game Engines</a>
+                            <p class="description muted-text">Frameworks for building games across multiple platforms.</p>
+                            <a href="#" class="link primary-text">
                                 See the 57 items in this collection
                                 <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor" class="octicon">
                                     <path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z"></path>
@@ -91,11 +91,134 @@
                     </div>
                 </article>
             </div>
-            <aside class="popular-devs-container">
-                <h1>popular devs</h1>
+            <aside class="trending-card">
+                <div class="dev-card">
+                    <div class="dev-title-container">
+                        <a href="#" class="card-subtitle muted-text"><span class="dev-icon"></span> Trending developers</a>
+                    </div>
+                    <div class="dev-list">
+                        <article class="dev-item">
+                            <div class="dev-content">
+                                <div class="avatar-position">
+                                    <img class="avatar-user" src="assets/dev-1.jfif" alt="Sebastian">
+                                </div>
+                                <div class="dev-details">
+                                    <h4 class="name-username">
+                                        <a href="#" class="name primary-text">Sebastian Muszynski</a>
+                                        <span class="username muted-text">syssi</span>
+                                    </h4>
+                                    <p class="repo">
+                                        <a href="#" class="repo-link muted-text">
+                                            <span class="repo-icon"></span>
+                                            esphome-jk-bms
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dev-item">
+                            <div class="dev-content">
+                                <div class="avatar-position">
+                                    <img class="avatar-user" src="assets/dev-2.jfif" alt="Eric">
+                                </div>
+                                <div class="dev-details">
+                                    <h4 class="name-username">
+                                        <a href="#" class="name primary-text">Eric Buehler</a>
+                                        <span class="username muted-text">EricLBuehler</span>
+                                    </h4>
+                                    <p class="repo">
+                                        <a href="#" class="repo-link muted-text">
+                                            <span class="repo-icon"></span>
+                                            mistral.rs
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dev-item">
+                            <div class="dev-content">
+                                <div class="avatar-position">
+                                    <img class="avatar-user" src="assets/dev-3.jfif" alt="Bagheera">
+                                </div>
+                                <div class="dev-details">
+                                    <h4 class="name-username">
+                                        <a href="#" class="name primary-text">Bagheera</a>
+                                        <span class="username muted-text">bghira</span>
+                                    </h4>
+                                    <p class="repo">
+                                        <a href="#" class="repo-link muted-text">
+                                            <span class="repo-icon"></span>
+                                            SimpleTuner
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dev-item">
+                            <div class="dev-content">
+                                <div class="avatar-position">
+                                    <img class="avatar-user" src="assets/dev-4.png" alt="Jack">
+                                </div>
+                                <div class="dev-details">
+                                    <h4 class="name-username">
+                                        <a href="#" class="name primary-text">Jack Lloyd</a>
+                                        <span class="username muted-text">randombit</span>
+                                    </h4>
+                                    <p class="repo">
+                                        <a href="#" class="repo-link muted-text">
+                                            <span class="repo-icon"></span>
+                                            botan
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="dev-footer">
+                        <a href="#" class="link">
+                            See more trending developers
+                            <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor" class="octicon">
+                                <path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z"></path>
+                            </svg> 
+                        </a>
+                    </div>
+                </div>
             </aside>
         </section>
     </main>
-    <footer><h1>footer</h1></footer>
+    <footer class="footer muted-text">
+        <a href="#">
+            <img src="assets/icons/footer-logo.png" alt="GitHub Logo">
+        </a>
+        <span>© 2025 GitHub, Inc.</span>
+        <nav>
+            <ul class="footer-nav-list">
+                <li>
+                    <a href="#" class="footer-nav-link">Terms</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-nav-link">Privacy</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-nav-link">Security</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-nav-link">Status</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-nav-link">Docs</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-nav-link">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-nav-link">Manage Cookies</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-nav-link">Do not share my personal information</a>
+                </li>
+            </ul>                
+        </nav>
+    </footer>
 </body>
 </html>
