@@ -129,6 +129,9 @@ header .container {
     display: none;
     padding-top: 2rem;
     width: 216px;
+    height: 310px;
+    position: sticky;
+    top: 64px;
 }
 
 .main-nav .active {
