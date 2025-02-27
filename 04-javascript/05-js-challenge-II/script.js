@@ -19,4 +19,38 @@ for (let i = 0; i < words.length; i++) {
   }
 }
 
+// 3. Unique Array Builder
 console.log(words);
+
+let uniqueNumbers = [];
+
+while (uniqueNumbers.length < 10) {
+  let randomNumber = Math.floor(Math.random() * 20) + 1;
+
+  // Check if the randomNumber already exists in the array
+  let exists = false;
+  for (let i = 0; i < uniqueNumbers.length; i++) {
+    if (uniqueNumbers[i] === randomNumber) {
+      exists = true;
+      break;
+    }
+  }
+
+  // If it doesn't exist, add it to the array
+  if (!exists) {
+    uniqueNumbers.push(randomNumber);
+  }
+}
+
+console.log(uniqueNumbers);
+
+// 4. Triangle Checker
+let sideA = 7;
+let sideB = 10;
+let sideC = 5;
+
+if (sideA + sideB > sideC && sideB + sideC > sideA && sideA + sideC > sideB) {
+  console.log(`The sides ${sideA}, ${sideB}, and ${sideC} form a valid triangle.`);
+} else {
+  console.log(`The sides ${sideA}, ${sideB}, and ${sideC} do not form a valid triangle.`);
+}
