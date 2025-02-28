@@ -110,7 +110,7 @@ NOTE: _Every execution gives a different output._
   - If the number already exists, `exists` is set to `true`, and the loop breaks.
 - If the number doesn't exist, it is added to the `uniqueNumbers` array using the `.push()` method.
 
-## Task 4: Unique Array Builder
+## Task 4: Triangle Checker
 
 ### Given Code:
 
