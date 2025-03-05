@@ -4,11 +4,11 @@
 
 * DOCU: [Briefly describe the purpose of the function]
 
-* @param [data type] paramName - [Short description of the parameter's role]
+* @param {data type} paramName - [Short description of the parameter's role]
 
-* @return [data type] - [Describe what the function returns, if applicable]
+* @return {data type} - [Describe what the function returns, if applicable]
 
-* @throws [Exception] - [If the function throws exceptions, mention them]
+* @throws {Exception} - [If the function throws exceptions, mention them]
 
 * 
 

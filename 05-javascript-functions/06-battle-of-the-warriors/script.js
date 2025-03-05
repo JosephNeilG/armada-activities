@@ -1,29 +1,37 @@
-// object 1
+// DOCU: Creates a warrior1 object with properties: name, hp, strength and attack function property.
 let warrior1 = {
     name: "Thor",
     hp: 100,
-    strength: 15,
-    attack: function() {
+    strength: 14,
+    // DOCU: Calculates and returns a random attack value based on the character's strength.  
+    attack() {
         return Math.floor(Math.random() * (this.strength + 1));
     }
 }
 
-// object 2
+// DOCU: Creates a warrior2 object with properties: name, hp, strength and attack function property.
 let warrior2 = {
     name: "Zeus",
     hp: 100,
     strength: 12,
-    attack: function() {
+    attack() {
         return Math.floor(Math.random() * (this.strength + 1));
     }
 }
 
-// displays round number header
+/**
+ * DOCU: Displays the current round number.
+ * @param {number} round The round number to be displayed.
+ */
 function displayRound(round) {
     console.log(`=== Round ${round} ===`);
 }
 
-// displays who attacked who and damage thrown value
+/**
+ * DOCU: Simulates an attack from one character to another and updates the defender's HP.
+ * @param {object} attacker The character initiating the attack. Must have an `attack` method and a `name` property.
+ * @param {object} defender The character receiving the attack. Must have an `hp` property and a `name` property.
+ */
 function trackDamage(attacker, defender) {
     let damageThrown = attacker.attack();
     console.log(`${attacker.name} attacks ${defender.name} and does ${damageThrown} damage!`);
@@ -31,16 +39,24 @@ function trackDamage(attacker, defender) {
     defender.hp -= damageThrown;
 }
 
-// displays each warrior's remaining hp.
+/**
+ * DOCU: Displays the current HP of both warriors, ensuring HP does not go below 0.
+ * @param {object} warrior1 The first warrior, must have `name` and `hp` properties.
+ * @param {object} warrior2 The second warrior, must have `name` and `hp` properties.
+ */
 function displayHp(warrior1, warrior2) {
-    // prevents negative hp
+    // DOCU: Prevents negative hp.
     if (warrior1.hp < 0) warrior1.hp = 0;
     if (warrior2.hp < 0) warrior2.hp = 0;
 
     console.log(`${warrior1.name} HP: ${warrior1.hp} | ${warrior2.name} HP: ${warrior2.hp}`)
 }
 
-// displays winner or draw
+/**
+ * DOCU: Determines and announces the winner of the battle based on remaining HP.
+ * @param {object} warrior1 The first warrior, must have `name` and `hp` properties.
+ * @param {object} warrior2 The second warrior, must have `name` and `hp` properties.
+ */
 function checkWinner(warrior1, warrior2) {
     if (warrior1.hp > warrior2.hp) {
         console.log(`${warrior1.name} WINS the battle!`);
@@ -51,7 +67,13 @@ function checkWinner(warrior1, warrior2) {
     }
 }
 
-// simulates 10 rounds of battle
+/**
+ * DOCU: Simulates 10 rounds of battle between two warriors.
+ *       Displays current round.
+ *       Each warrior takes turns attacking the other, and their HP is updated accordingly.
+ *       The battle results are displayed after each attack.
+ *       After 10 rounds, the winner is determined based on remaining HP.
+ */
 for (let i = 1; i <=10; i++) {
     displayRound(i);
 
@@ -62,5 +84,5 @@ for (let i = 1; i <=10; i++) {
     displayHp(warrior1, warrior2);
 }
 
-// checks winner after 10th round
+// DOCU: Determines and announces the winner of the battle after 10 rounds.
 checkWinner(warrior1, warrior2);
