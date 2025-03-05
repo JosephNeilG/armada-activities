@@ -2,7 +2,7 @@
 let warrior1 = {
     name: "Thor",
     hp: 100,
-    strength: 14,
+    strength: 15,
     // DOCU: Calculates and returns a random attack value based on the character's strength.  
     attack() {
         return Math.floor(Math.random() * (this.strength + 1));
@@ -32,7 +32,7 @@ function displayRound(round) {
  * @param {object} attacker The character initiating the attack. Must have an `attack` method and a `name` property.
  * @param {object} defender The character receiving the attack. Must have an `hp` property and a `name` property.
  */
-function trackDamage(attacker, defender) {
+function attackOpponent(attacker, defender) {
     let damageThrown = attacker.attack();
     console.log(`${attacker.name} attacks ${defender.name} and does ${damageThrown} damage!`);
 
@@ -49,7 +49,7 @@ function displayHp(warrior1, warrior2) {
     if (warrior1.hp < 0) warrior1.hp = 0;
     if (warrior2.hp < 0) warrior2.hp = 0;
 
-    console.log(`${warrior1.name} HP: ${warrior1.hp} | ${warrior2.name} HP: ${warrior2.hp}`)
+    console.log(`${warrior1.name} HP: ${warrior1.hp} | ${warrior2.name} HP: ${warrior2.hp}`);
 }
 
 /**
@@ -59,9 +59,9 @@ function displayHp(warrior1, warrior2) {
  */
 function checkWinner(warrior1, warrior2) {
     if (warrior1.hp > warrior2.hp) {
-        console.log(`${warrior1.name} WINS the battle!`);
+        console.log(`🏆 ${warrior1.name} WINS the battle! 🏆`);
     } else if (warrior2.hp > warrior1.hp) {
-        console.log(`${warrior2.name} WINS the battle!`);
+        console.log(`🏆 ${warrior2.name} WINS the battle! 🏆`);
     } else {
         console.log("The battle ends in a DRAW!")
     }
@@ -72,17 +72,26 @@ function checkWinner(warrior1, warrior2) {
  *       Displays current round.
  *       Each warrior takes turns attacking the other, and their HP is updated accordingly.
  *       The battle results are displayed after each attack.
- *       After 10 rounds, the winner is determined based on remaining HP.
+ *       Checks if the defender's health is 0 every attack, it ends the battle.
  */
 for (let i = 1; i <=10; i++) {
     displayRound(i);
 
-    trackDamage(warrior1, warrior2);
+    attackOpponent(warrior1, warrior2);
     displayHp(warrior1, warrior2);
 
-    trackDamage(warrior2, warrior1);
+    if (warrior2.hp === 0) {
+        break;
+    }
+
+    attackOpponent(warrior2, warrior1);
     displayHp(warrior1, warrior2);
+
+    if (warrior1.hp === 0) {
+        break;
+    }
+    
 }
 
-// DOCU: Determines and announces the winner of the battle after 10 rounds.
+// DOCU: Determines and announces the winner of the battle after 10 rounds based on remaining hp.
 checkWinner(warrior1, warrior2);
