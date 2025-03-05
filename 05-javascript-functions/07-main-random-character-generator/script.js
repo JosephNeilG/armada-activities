@@ -1,3 +1,18 @@
+// DOCU: Creates a character object with default properties on name and health and random values for class, randomizeHealth, and specialAbility.
+let character = {
+    name: "Hero",
+    health: 100,
+    class: getRandomClass(),
+    randomizeHealth() {
+        this.health = Math.floor(Math.random() * (150 - 50 + 1) + 50);
+    },
+    specialAbility: getRandomAbility()
+}
+
+// Test cases for character object.
+character.randomizeHealth(); // Invoke to set set random health value from 50-150.
+console.log(character.health); // Should log a random value between 50 and 150.
+
 /**
  * DOCU: Selects a random name from the name list and returns it.
  * @return {string} The randomly selected name from the list.
