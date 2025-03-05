@@ -84,15 +84,15 @@ function generateMultipleCharacters(x) {
     return multipleCharactersArr;
 }
 
-// Test cases
+// Test Cases
 
 // DOCU: Generates a character with random attributes.
 const randomCharacter = generateCharacter();
-console.log(randomCharacter);
+console.dir(randomCharacter); // Logs a character with random attributes
 
 // DOCU: Generates a character with a specified name.
 const namedCharacter = generateCharacter("Drake");
-console.log(namedCharacter);
+console.dir(namedCharacter); // Logs a character named "Drake"
 
 // DOCU: Creates two characters and initiates a battle between them.
 const character1 = generateCharacter("Zane");
