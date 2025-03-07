@@ -24,8 +24,8 @@ function updateBal() {
 
 /**
  * DOCU: Displays feedback messages for transactions.
- * @param {string} feedback - The transaction message to be displayed.
- * @param {boolean} isSuccess - If true, applies success styling; if false, applies error styling.
+ * @param {string} feedback The transaction message to be displayed.
+ * @param {boolean} isSuccess If true, applies success styling; if false, applies error styling.
  */
 function displayFeedback(feedback, isSuccess) {
     transacFeedback.textContent = feedback;
