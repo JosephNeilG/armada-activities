@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firefly-container {
+    display: flex;
+    gap: 40px;
+}
+
+.firefly {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
