@@ -1,0 +1,50 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-image {
+    background-image: url('assets/main-bg.jpg');
+    height: 100%;
+}
+
+.operator-name {
+    font-size: 1.20rem;
+    color: #24262a;
+    background-color: #C3C3C3;
+}
+
+.card img {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.op-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.op-info-pic {
+    width: 350px;
+}
+
+.operator-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, border 0.2s, background-color 0.2s;
+}
+
+.operator-card:hover .operator-img, 
+.operator-card.selected .operator-img {
+    background-color: #2499FF;
+}
+
+.operator-card:hover .operator-name, 
+.operator-card.selected .operator-name {
+    background-color: #00FFE5;
+}
+
+.operator-card:hover {
+    transform: scale(1.05);
+}
+
+.operator-card.selected {
+    transform: scale(1.05);
+}
