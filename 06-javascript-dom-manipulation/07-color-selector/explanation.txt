@@ -1,0 +1,9 @@
+1. Click a color button. What happens?
+- Clicking a button shows an alert that you clicked the button, followed by an alert again showing that you clicked the container.
+
+2. Uncomment event.stopPropagation(); inside the button click handler.
+3. Click a color button again. What changed?
+- Clicking a button shows an alert again that you clicked the button, but now it does now show an alert that you clicked the container.
+
+4. Explain in your own words why event.stopPropagation() is useful in this example.
+- Based on my observation on how the event.stopPropagation() works in the example, it is useful when you both have a click event for a parent element and its child. It is used so that if you clicked a child, it won't count as a click for the parent. This way, only the child’s click event executes, preventing the parent’s event from running unintentionally.
