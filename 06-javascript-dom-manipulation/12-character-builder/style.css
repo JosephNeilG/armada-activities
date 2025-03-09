@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #171615;
+}
+
+.armor-item {
+    width: 85px;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.armor-item:hover {
+    transform: scale(1.1);
+}
+
+.character-preview {
+    height: 250px;
+}
+
+.armor-slot {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#helmet-slot {
+    top: 0;
+}
+
+#armor-slot {
+    top: 53px;
+}
+
+#leggings-slot {
+    top: 117px;
+}
+
+#boots-slot {
+    top: 175px;
+}
+
+.active {
+    background-color: #413d3b;
+}
