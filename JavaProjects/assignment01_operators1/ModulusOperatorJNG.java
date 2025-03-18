@@ -1,4 +1,4 @@
-package assignmentoperators1;
+package assignment01_operators1;
 public class ModulusOperatorJNG {
     public static void main(String[] args) {
         // declare and initialize two numbers.

@@ -1,4 +1,4 @@
-package assignmentoperators2;
+package assignment02_operators2;
 public class AssignmentOperatorsJNG {
     public static void main(String[] args) {
         int x = 10;

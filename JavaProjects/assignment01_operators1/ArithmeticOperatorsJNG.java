@@ -1,4 +1,4 @@
-package assignmentoperators1;
+package assignment01_operators1;
 public class ArithmeticOperatorsJNG {
     public static void main (String[] args) {
         // declaration and initialization.
