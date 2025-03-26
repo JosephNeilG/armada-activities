@@ -1,4 +1,4 @@
-package assignment04_conditionalstatement;
+package a04_conditionalstatement;
 import java.util.Scanner;
 
 public class OddEvenJNG {

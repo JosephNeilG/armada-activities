@@ -1,4 +1,4 @@
-package assignment03_bmicalculator;
+package a03_bmicalculator;
 import java.util.Scanner;
 
 public class BMICalculator {

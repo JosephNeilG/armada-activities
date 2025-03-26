@@ -1,4 +1,4 @@
-package assignment01_operators1;
+package a01_operators1;
 public class RelationalOperatorsJNG {
     public static void main (String[] args) {
         // declare and initialize two integers.

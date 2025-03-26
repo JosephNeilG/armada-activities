@@ -1,4 +1,4 @@
-package assignment05_loops;
+package a05_loops;
 public class MultiplicationTableJNG {
     public static void main(String[] args) {
         int num = 5;

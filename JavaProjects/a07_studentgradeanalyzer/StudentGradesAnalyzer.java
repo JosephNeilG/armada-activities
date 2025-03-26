@@ -1,4 +1,4 @@
-package assignment07_studentgradeanalyzer;
+package a07_studentgradeanalyzer;
 import java.util.Scanner;
 
 public class StudentGradesAnalyzer {

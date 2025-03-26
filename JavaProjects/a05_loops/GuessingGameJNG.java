@@ -1,4 +1,4 @@
-package assignment05_loops;
+package a05_loops;
 import java.util.Scanner;
 
 public class GuessingGameJNG {

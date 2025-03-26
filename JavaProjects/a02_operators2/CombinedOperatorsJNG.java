@@ -1,4 +1,4 @@
-package assignment02_operators2;
+package a02_operators2;
 public class CombinedOperatorsJNG {
     public static void main(String[] args) {
         int a = 5;

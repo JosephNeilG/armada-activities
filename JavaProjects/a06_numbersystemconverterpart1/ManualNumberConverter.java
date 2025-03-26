@@ -1,4 +1,4 @@
-package assignment06_numbersystemconverterpart1;
+package a06_numbersystemconverterpart1;
 import java.util.Scanner;
 
 public class ManualNumberConverter {
