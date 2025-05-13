@@ -30,7 +30,6 @@ public class Main {
                     System.out.println("Exiting...");
                     scanner.close();
                     return;
-
                 default:
                     System.out.println("Invalid choice. Choose between 1-3 only.\n");
                     break;
